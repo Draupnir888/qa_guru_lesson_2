@@ -43,19 +43,19 @@ public class S_Registration_Form_tests {
         //$("[id=subjectsContainer]").setValue("Maths"); //предметы
         //$("[class=subjects-auto-complete__value-container--is-multi]").click();
 
-        $(byText("Sports")).click();
+        //$(byText("Sports")).click();
         //$("[id=uploadPicture]").setValue("some user"); // добавление файла, погуглить как отработать добавление файла
         $("[id=currentAddress]").setValue("1600 Pennsylvania Avenue NW");
 
         //$("[class=css-1uccc91-singleValue]", 2).click(); //штат
-        $(byText("Select State")).click();
-        $("[id=react-select-3-option-3]").click();
+        //$(byText("Select State")).click();
+        //$("[id=react-select-3-option-3]").click();
         //$(byText("Rajasthan")).click();
 
-        $(".css-1wa3eu0-placeholder", 3).click(); //город
-        $(byText("Jaipur")).click();
-        //$(byText("Submit")).click();
-        $x("//button[@id='submit']").click();
+        //$(".css-1wa3eu0-placeholder", 3).click(); //город
+        //$(byText("Jaipur")).click();
+        $(byText("Submit")).click();
+       // $x("//button[@id='submit']").click();
 
         //$("[id=example-modal-sizes-title-lg]").shouldHave(text("Thanks for submitting the form"));
 
