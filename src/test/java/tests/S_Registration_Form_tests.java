@@ -36,17 +36,21 @@ public class S_Registration_Form_tests {
         $(byText("October")).click();
         $("[class=react-datepicker__year-select]").click();
         $(byText("1989")).click();
-        //$("[class=react-datepicker__day react-datepicker__day--018]").click()
-        // $(byText("react-datepicker__day react-datepicker__day--018")).click();
-        //$("[class=react-datepicker__day.react-datepicker__day--018]").click();
+        $(byText("18")).click();
+
+
 
         //$("[id=subjectsContainer]").setValue("Maths"); //предметы
+        //$("[class=subjects-auto-complete__value-container--is-multi]").click();
+
         $(byText("Sports")).click();
         //$("[id=uploadPicture]").setValue("some user"); // добавление файла, погуглить как отработать добавление файла
         $("[id=currentAddress]").setValue("1600 Pennsylvania Avenue NW");
 
-        $("[class=css-1uccc91-singleValue]").click(); //штат
-        $(byText("Rajasthan")).click();
+        //$("[class=css-1uccc91-singleValue]", 2).click(); //штат
+        $(byText("Select State")).click();
+        $("[id=react-select-3-option-3]").click();
+        //$(byText("Rajasthan")).click();
 
         $(".css-1wa3eu0-placeholder", 3).click(); //город
         $(byText("Jaipur")).click();

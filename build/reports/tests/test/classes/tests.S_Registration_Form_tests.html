@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">21.967s</div>
+<div class="counter">26.066s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,23 +76,16 @@
 <a name="success_ful_submit_registration_test()"></a>
 <h3 class="failures">success_ful_submit_registration_test()</h3>
 <span class="code">
-<pre>Element not found {[class=css-1uccc91-singleValue]}
-Expected: visible or transparent: visible or have css value opacity=0
-Screenshot: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2/build/reports/tests/1621562660279.0.png
-Page source: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2/build/reports/tests/1621562660279.0.html
+<pre>Invalid element state: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
+Screenshot: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623074618515.0.png
+Page source: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623074618515.0.html
 Timeout: 4 s.
-Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class=css-1uccc91-singleValue]&quot;}
-	at com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:83)
-	at com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:136)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:114)
-	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:139)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:24)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
+Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
+	at com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:26)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:155)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
 	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at tests.S_Registration_Form_tests.success_ful_submit_registration_test(S_Registration_Form_tests.java:48)
+	at tests.S_Registration_Form_tests.success_ful_submit_registration_test(S_Registration_Form_tests.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -183,16 +176,15 @@ Caused by: NoSuchElementException: no such element: Unable to locate element: {&
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[class=css-1uccc91-singleValue]&quot;}
-  (Session info: chrome=90.0.4430.212)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
+  (Session info: chrome=91.0.4472.77)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HD3DEEG', ip: '172.18.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
+System info: host: 'DESKTOP-HD3DEEG', ip: '192.168.31.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 90.0.4430.212, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\8FEE~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:49943}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: fc44bba6977638506ee645eaff8c5e9f
-*** Element info: {Using=css selector, value=[class=css-1uccc91-singleValue]}
-	at jdk.internal.reflect.GeneratedConstructorAccessor11.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\8FEE~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5af01d6a3626ad443530a7d545441f8
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
@@ -201,15 +193,14 @@ Session ID: fc44bba6977638506ee645eaff8c5e9f
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
-	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:59)
-	at com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:34)
-	at com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:104)
-	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:99)
-	... 98 more
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.codeborne.selenide.commands.Click.click(Click.java:46)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:27)
+	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
+	... 93 more
 </pre>
 </span>
 </div>
@@ -226,7 +217,7 @@ Session ID: fc44bba6977638506ee645eaff8c5e9f
 </thead>
 <tr>
 <td class="failures">success_ful_submit_registration_test()</td>
-<td class="failures">21.967s</td>
+<td class="failures">26.066s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -237,11 +228,11 @@ Session ID: fc44bba6977638506ee645eaff8c5e9f
 <pre>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 25275
+Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 1894
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-мая 21, 2021 7:04:06 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+июн. 07, 2021 7:03:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 </pre>
 </span>
@@ -254,7 +245,7 @@ INFO: Detected dialect: W3C
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.8</a> at 21 мая 2021 г., 7:04:23</p>
+<a href="http://www.gradle.org">Gradle 6.8</a> at 7 июн. 2021 г., 19:03:45</p>
 </div>
 </div>
 </body>
