@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.S_Registration_Form_tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-07T14:03:13" hostname="DESKTOP-HD3DEEG" time="26.066">
+<testsuite name="tests.S_Registration_Form_tests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-06-15T06:26:26" hostname="DESKTOP-HD3DEEG" time="23.606">
   <properties/>
-  <testcase name="success_ful_submit_registration_test()" classname="tests.S_Registration_Form_tests" time="26.066">
-    <failure message="Invalid element state: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;&#13;&#10;Screenshot: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623074618515.0.png&#13;&#10;Page source: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623074618515.0.html&#13;&#10;Timeout: 4 s.&#13;&#10;Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;" type="com.codeborne.selenide.ex.InvalidStateException">Invalid element state: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
-Screenshot: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623074618515.0.png
-Page source: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623074618515.0.html
+  <testcase name="success_ful_submit_registration_test()" classname="tests.S_Registration_Form_tests" time="23.606">
+    <failure message="Element should have text 'somefirstName somelastName' {by text: Student Name}&#13;&#10;Element: '&lt;td&gt;Student Name&lt;/td&gt;'&#13;&#10;Screenshot: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623738409113.0.png&#13;&#10;Page source: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623738409113.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should have text 'somefirstName somelastName' {by text: Student Name}
+Element: '&lt;td&gt;Student Name&lt;/td&gt;'
+Screenshot: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623738409113.0.png
+Page source: file:/C:/Users/Михаил/IdeaProjects/qa_guru_lesson_2.2/build/reports/tests/1623738409113.0.html
 Timeout: 4 s.
-Caused by: ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
-	at com.codeborne.selenide.impl.ExceptionWrapper.wrap(ExceptionWrapper.java:26)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:155)
+	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:30)
+	at com.codeborne.selenide.commands.Should.execute(Should.java:14)
+	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
+	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
 	at com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:85)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at tests.S_Registration_Form_tests.success_ful_submit_registration_test(S_Registration_Form_tests.java:51)
+	at com.sun.proxy.$Proxy13.shouldHave(Unknown Source)
+	at tests.S_Registration_Form_tests.success_ful_submit_registration_test(S_Registration_Form_tests.java:69)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,42 +105,17 @@ Caused by: ElementClickInterceptedException: element click intercepted: Element 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;div class=&quot; css-1wa3eu0-placeholder&quot;&gt;...&lt;/div&gt; is not clickable at point (575, 645). Other element would receive the click: &lt;span&gt;...&lt;/span&gt;
-  (Session info: chrome=91.0.4472.77)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-HD3DEEG', ip: '192.168.31.227', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\8FEE~1\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:58313}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d5af01d6a3626ad443530a7d545441f8
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.codeborne.selenide.commands.Click.click(Click.java:46)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:27)
-	at com.codeborne.selenide.commands.Click.execute(Click.java:16)
-	at com.codeborne.selenide.commands.Commands.execute(Commands.java:155)
-	at com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:133)
-	... 93 more
 </failure>
   </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 91.0.4472.19 (1bf021f248676a0b2ab3ee0561d83a59e424c23e-refs/branch-heads/4472@{#288}) on port 1894
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 4844
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-июн. 07, 2021 7:03:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+июн. 15, 2021 11:26:34 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
